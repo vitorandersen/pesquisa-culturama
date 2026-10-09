@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Pesquisa Culturama</title>
 </head>
 <body>
+    <header>
+        <h1>Pesquisa Online</h1>
+    </header>
+
+    <main>
+        <section>
+            <form action="" method="get"> <!-- pega valores do form e joga para url do navegador -->
+                <fieldset>
+                    <!-- DADOS PESSOAIS -->
+                    <legend>Dados Pessoais</legend>
+                    <label for="userName">Nome</label>
+                    <input type="text" name="userName" required>
+                    <br>
+                    <label for="userAge">Idade</label>
+                    <input type="number" name="userAge" min="12" max="100" required>
+                    <br>
+                    <label for="birthDate">Data Nascimento</label>
+                    <input type="date" name="birthDate">
+                    <br>
+                    <label for="userEmail">Email</label>
+                    <input type="email" name="userEmail">
+                    <br>
+                    <label for="userPhone">Telefone</label>
+                    <input type="tel" name="userPhone" pattern="[0-9]{11}" placeholder="DDD+Número">
+                    <br>
+                    <label for="userPhoto">Upload Foto</label>
+                    <input type="file" accept="image/*" name="userPhoto">
+                    <br>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    
     
 </body>
 </html>
