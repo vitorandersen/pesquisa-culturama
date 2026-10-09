@@ -14,8 +14,8 @@
     <main>
         <section>
             <form action="" method="get"> <!-- pega valores do form e joga para url do navegador -->
-                <fieldset>
-                    <!-- DADOS PESSOAIS -->
+                <!-- DADOS PESSOAIS -->
+                <!-- <fieldset>                    
                     <legend>Dados Pessoais</legend>
                     <label for="userName">Nome</label>
                     <input type="text" name="userName" required>
@@ -34,9 +34,26 @@
                     <br>
                     <label for="userPhoto">Upload Foto</label>
                     <input type="file" accept="image/*" name="userPhoto">
-                    <br>
-                    <button type="submit">Enviar</button>
+                </fieldset> -->
+
+                 <!-- PERFIL -->
+                <fieldset>                   
+                    <legend>Perfil</legend>
+
+                    <p>Gênero</p>
+                    <input type="radio" name="userGender" value="Female">
+                    <label for="userGender">Feminino</label>
+                    <input type="radio" name="userGender" value="Male">
+                    <label for="userGender">Masculino</label>
+                    <input type="radio" name="userGender" value="notInformed">
+                    <label for="userGender">Não informado</label>
+
                 </fieldset>
+
+                <br>
+                <button type="submit">Enviar</button>
+
+
             </form>
         </section>
     </main>
