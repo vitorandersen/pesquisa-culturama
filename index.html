@@ -59,7 +59,7 @@
                     <br>
                     
                     <label for="userState">Estado:</label>
-                    <select name="userState">
+                    <select name="userState" required>
                         <option value="notInformed">Selecione</option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
@@ -96,6 +96,21 @@
                     <br>
 
                 </fieldset>
+
+                <fieldset>
+                    <legend>Hábitos</legend>
+                    <p>Redes Sociais</p>
+                    <input type="checkbox" name="userSocial" value="instagram">
+                    <label for="userSocial">Instagram</label>
+                    <br>
+                    <input type="checkbox" name="userSocial" value="facebook">
+                    <label for="userSocial">Facebook</label>
+                    <br>
+                    <input type="checkbox" name="userSocial" value="linkedin">
+                    <label for="userSocial">LinkedIn</label>
+
+                </fieldset>
+
 
                 <br>
                 <button type="submit">Enviar</button>
